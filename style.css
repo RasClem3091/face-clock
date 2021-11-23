@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock{
+  width: 35rem;
+  height: 35rem;
+  background-color: moccasin;
+  border-radius: 50%;
+  border: 0.5rem solid orangered;
+  box-shadow: 0.5rem 0.5rem 1rem chocolate, -0.5rem -0.5rem 1rem chocolate;
+  position: relative;
+}
+
+.numbers{
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+
+.numbers div{
+  position: absolute;
+  
+  color: aquamarine;
+  text-shadow: 0.2rem 0.2rem 0.2rem gray;
+}
+
+.twelve{
+  font-size: 2.5rem;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.one{
+  font-size: 1.5rem;
+  top: 3rem;
+  left: 72%;
+}
+
+.two{
+  font-size: 1.5rem;
+  top: 8.5rem;
+  left: 86%;
+}
+
+.three{
+  font-size: 2.5rem;
+  top: 16rem;
+  left: 100%;
+  transform: translateX(-180%);
+}
+
+.four{
+  font-size: 1.5rem;
+  bottom: 8.5rem;
+  left: 86%;
+}
+
+.five{
+  font-size: 1.5rem;
+  bottom: 3rem;
+  left: 70%;
+}
+
+.six{
+  font-size: 2.5rem;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seven{
+  font-size: 1.5rem;
+  bottom: 3.5rem;
+  right: 73%;
+}
+
+.eight{
+  font-size: 1.5rem;
+  bottom: 9.5rem;
+  right: 89%;
+}
+
+.nine{
+  font-size: 2.5rem;
+  bottom: 17rem;
+  transform: translateX(70%);
+}
+
+.ten{
+  font-size: 1.5rem;
+  top: 8.5rem;
+  right: 86%;
+}
+
+.eleven{
+  font-size: 1.5rem;
+  top: 3rem;
+  right: 72%;
+}
+
+.arrows{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows::before{
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: lavender;
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 0.5rem violet;
+  z-index: 10;
+}
+
+.arrows div{
+  width: 0.7rem;
+  height: 12rem;
+  background-color: violet;
+  position: absolute;
+  bottom: 50%;
+  box-shadow: 0.2rem 0.2rem 0.5rem lavender;
+  border-radius: 100% 100% 0 0;
+  transform-origin: bottom center;
+}
+
+.arrows .hour{
+  height: 10rem;
+  transform: rotate(90deg);
+}
+
+.arrows .second{
+  background-color:aquamarine;
+  transform: rotate(270deg);
+}
